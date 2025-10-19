@@ -9,16 +9,16 @@
 <body>
    <p>
        <?php
-       $personal_date = [
-        ['label' => '名前', 'value' => '玉ねぎ'],
-        ['label' => '値段', 'value' => '200'],
-        ['label' => '産地', 'value' => '北海道']
-      ];
+       $items = array(
+    "名前" => "玉ねぎ",
+    "値段" => 200,
+    "産地" => "北海道"
+);
 
-       
-      foreach ($personal_date as $item) {
-       echo $item['label'] . ':' .$item['value'] . '<br>'; 
-      }
+foreach ($items as $key => $value) {
+    echo $key . "：" . $value . "<br>";
+}
+
       ?>
     </p>
 
