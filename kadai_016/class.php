@@ -19,7 +19,7 @@
         $this->price = $price;
       }
 
-      public function show_Price() {
+      public function show_price() {
         echo $this->price . '<br>';
       }
     }
@@ -40,14 +40,14 @@
     }
   
     $food = new Food('potato', 250);
-    $animal = new Animal('dog', 60, '5000');
+    $animal = new Animal('dog', 60, 5000);
 
     print_r($food);
     echo '<br>';
     print_r($animal);
     echo '<br>';
 
-    $food->show_Price();
+    $food->show_price();
     $animal->show_height();
 
     ?>
